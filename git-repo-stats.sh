@@ -1,5 +1,20 @@
 #!/bin/bash
 
+# Run this bash script from the repo root to test and grab first stats.
+
+# Rerun manually after commits OR
+# Add git post-commit hook to rerun and gather more stats after every commit.
+
+:'
+echo '
+
+' > git-repo-stats-post-commit-hook.sh
+
+cd .git/hooks
+
+ln -s ../git-repo-stats-post-commit-hook.sh .
+'
+
 # CONSTANTS
 TRUE=0
 FALSE=1
@@ -15,12 +30,20 @@ if [ -d .git/ ]; then REPO_ROOT=0; else REPO_ROOT=1; fi
 REPO_CREATE_TIME=$(stat .git/ | grep Birth | cut -d' ' -f4)
 
 # Is there a gitignore?
-if [ -s '.gitignore' ]; then     IGNORE_FILE=0; else    IGNORE_FILE=1; fi
+if [ -s '.gitignore' ]; then     IGNORES=0; else    IGNORES=1; fi
+
+if ${IGNORES}
+
+then
+
+else
+
+fi
+
 
 # Create array of paths to du.
 # No symbolic links.
 # Filtering out dirs/ in gitignore.
-PATHS_TO_QUERY=$(ls -a1d .*/ */ | grep -v '..'||'.')
 
 
 
