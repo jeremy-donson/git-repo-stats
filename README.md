@@ -77,13 +77,19 @@ $ echo '# ** You should see the output of what you ran manually after each commi
 
 ## Suggestions to reduce repo size.
 
+⚠️  Warning: CODE BLOAT IS A BAD SIGN!!
+
 1. Add a [.gitgnore file](https://www.atlassian.com/git/tutorials/gitignore) to omit repo sub-directories which we do NOT want to share.
 
 2. Learn about [testing your code](https://stackoverflow.com/questions/3053521/testing-your-code-before-releasing-to-qa) and [tracking dependencies](https://www.ibm.com/developerworks/rational/library/tracking-dependencies-between-requirements-artifacts/index.html).
 
 3. Use [git tree](https://git-scm.com/docs/git-ls-tree) or [git submodule](https://www.atlassian.com/blog/git/git-submodules-workflows-tips).
 
-4. ⚠️  Warning: CODE BLOAT IS A BAD SIGN!!
+4. To reduce .git/ subfolder size: delete it, reset project repo, reinitialize with git, add, commit.
+
+```
+$ rm -rf .git; git init; git add . ; git commit -m 'First commit or reset repo.'
+```
 
 ## Project Questions Support Group
 

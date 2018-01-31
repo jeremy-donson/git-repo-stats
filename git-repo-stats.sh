@@ -9,7 +9,7 @@ FALSE=1
 
 # FUNCTIONS
 
-# GIT INSTALLED
+# IS GIT LOCALLY INSTALLED?
 which git > /dev/null 2>&1 || { echo -ne '\nERROR: No git executable found.\nGit is a required local executable for this script.\nInstall git locally and try again.\n'; exit; }
 
 # GIT VERSION ABOVE MIN?
@@ -34,23 +34,26 @@ REPO_CREATE_TIME=$(stat .git/ | grep Birth | cut -d' ' -f4)
 GIT_STATE=$(git status)
 
 
-# DOES A gitignore FILE EXIST?
+# DOES NON-EMPTY gitignore FILE EXIST?
 if [ -s '.gitignore' ]; then     IGNORES=0; else    IGNORES=1; fi
 
-if [ ${IGNORES} ]
+# Main logic for gathering size data.
+if [ ${IGNORES} -eq 0 ]
 then
-# Get size of every dir in repo: dirname bytes
 # Create array of paths to du.
+# find . -mindepth 2 -maxdepth 2 -type d -name 14 -exec du -s {} +
+# Get size of every dir in repo: dirname bytes.
 # No symbolic links.
 for dir in ${DIRS} ; do $dir  ; done
-
-
-else
+else if [ ${IGNORES} -eq 1 ]
 # Filtering out files and dirs/ in gitignore.
 # Get size of every dir in repo: dirname bytes
+for dir in ${DIRS} ; do $dir  ; done
+
 fi
 
-
+# DO WE WANT TO REPORT ON .git/ FOLDER SIZE?
+if [ "${1}" == "include_dot_git" ]
 
 # Report on repo trending.
 
@@ -63,13 +66,13 @@ fi
 - Test without gitignore
 - Test with gitignore.
 - Report on bytes, kb, mb.
+- Install post-add OR post-commit hook.
 - Set comparative time windows.
 - Report on last 5 time windows.
-- Install post-add OR post-commit hook.
+- Test git version patterns.
 - Test post-add OR post-commit hook.
 - Identify language.
 - Speak to testing tools.
-- Test git version patterns.
 - Inquire about README.md anchors.
 
 '
