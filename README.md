@@ -5,7 +5,7 @@
 - [Run Script From Repo Root Manually After Commit](#run-script-from-repo-root-manually-after-commit)
 - [Rerun Script From Repo Root Manually After Commit](#rerun-script-from-repo-root-manually-after-commit)
 - [Automate Execution As Git Hook](#automate-execution-as-git-hook)
-- [Facebook Support Group](#facebook-support-group)
+- [Git Repo Stats Project Support Group](#project-questions-support-group)
 
 ---
 
@@ -46,6 +46,6 @@ $ echo '# ** You should see the output of what you ran manually after each commi
 
 ```
 
-## git-repo-stats Project Questions Support Group
+## Project Questions Support Group
 
 - [All git-repo-stats Questions](https://www.facebook.com/groups/BigDataProcessing/)
