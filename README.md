@@ -10,7 +10,8 @@ CODE BLOAT IS A BAD SIGN
 - [WATCH TRENDING MANUALLY]
 - [OPTIONALLY AUTOMATE RUN AS HOOK](#optional:-automate)
 - [Updating to New Releases](#updating-to-new-releases)
-- [TEST README](README-grom.md)
+- [TEST README GROM](README-grom.md)
+- [TEST README STATS](README-stats.md)
 ---
 
 
