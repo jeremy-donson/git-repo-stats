@@ -30,7 +30,9 @@ $ git config --global user.email "email@example.com"
 
 3. We have been using [git](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control) and [github](http://www.github.com) to manage online project assets, from media to source code.
 
-4. We want to preventable avoid code bloat by tracking your git repo sizes.
+4. We desire [expert use of git and githob](http://gitready.com/).
+
+5. We want to preemptively avoid code project bloat by tracking our git repo sizes.
 
 ⚠️  Warning: CODE BLOAT IS A BAD SIGN!!!!
 
@@ -72,6 +74,16 @@ $ git commit -m 'Added automation via post-commit hook.'
 $ echo '# ** You should see the output of what you ran manually after each commit going forward. **'
 
 ```
+
+## Suggestions to reduce repo size.
+
+1. Add a [.gitgnore file](https://www.atlassian.com/git/tutorials/gitignore) to omit repo sub-directories which we do NOT want to share.
+
+2. Learn about [testing your code](https://stackoverflow.com/questions/3053521/testing-your-code-before-releasing-to-qa) and [tracking dependencies](https://www.ibm.com/developerworks/rational/library/tracking-dependencies-between-requirements-artifacts/index.html).
+
+3. Use [git tree](https://git-scm.com/docs/git-ls-tree) or [git submodule](https://www.atlassian.com/blog/git/git-submodules-workflows-tips).
+
+4. ??
 
 ## Project Questions Support Group
 
