@@ -2,15 +2,21 @@
 
 ## GOAL: GATHER AND TRACK REPO SIZE
 
-## Table of Contents
+## TABLE OF CONTENTS
 
 - [RUN THIS SCRIPT]
 - [RERUN MANUALLY]
 - [WATCH TRENDING MANUALLY]
-
 - [OPTIONALLY AUTOMATE RUN AS HOOK](#optional:-automate)
+- [Updating to New Releases](#updating-to-new-releases)
+
+---
+
+## Table of Contents
 
 - [Updating to New Releases](#updating-to-new-releases)
+## Updating to New Releases
+
 ---
 
 ## Run this script manually from repo root to test execution and gather first repo stats.
@@ -60,3 +66,5 @@ blah
 ---
 
 ## [Post ALL Questions Here](https://www.facebook.com/groups/BigDataProcessing/)
+
+
