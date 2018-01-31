@@ -4,6 +4,7 @@
 
 ## Table of Contents
 
+- [Prerequisites](#prerequisites)
 - [Run Script From Repo Root Manually After Commit](#run-script-from-repo-root-manually-after-commit)
 - [Rerun Script From Repo Root Manually After Commit](#rerun-script-from-repo-root-manually-after-commit)
 - [Automate Execution As Git Hook](#automate-execution-as-git-hook)
@@ -11,6 +12,12 @@
 
 
 ---
+
+## Prerequisites:
+
+1. We have a current version of git locally installed.
+2. We have been using git to manage online project assets, from media to source code.
+3. We want to avoid code bloat by tracking your git repo sizes.
 
 ## Run script from repo root manually after commit
 
