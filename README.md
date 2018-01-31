@@ -8,10 +8,9 @@
 2. [RERUN MANUALLY]
 3. [WATCH TRENDING MANUALLY]
 
-4. [OPTIONALLY AUTOMATE RUN AS HOOK](#optional:-automate-gather-stats-and-report-on-trending-after-each-commit.)
+4. [OPTIONALLY AUTOMATE RUN AS HOOK](#optional:-automate)
 
-5. [GLITCH SUPPORT](#[post-all-questions-here](https://www.facebook.com/groups/bigdataprocessing/))
-
+- [Updating to New Releases](#updating-to-new-releases)
 ---
 
 ## Run this script manually from repo root to test execution and gather first repo stats.
@@ -51,5 +50,13 @@ $ git commit -m 'Added automation via post-commit hook.'
 # ** You should see the output of what you ran manually after each commit going forward. **
 
 ```
+
+## Updating to New Releases
+```
+blah
+blah
+blah
+```
+---
 
 ## [Post ALL Questions Here](https://www.facebook.com/groups/BigDataProcessing/)
