@@ -35,7 +35,7 @@ $ git add .
 
 $ git commit -m 'Added automation via post-commit hook.'
 
-# ** You should see the output of what you ran manually after each commit going forward. **
+$ echo '# ** You should see the output of what you ran manually after each commit going forward. **'
 
 ```
 
