@@ -1,7 +1,5 @@
 # TRACK + REPORT GIT REPO SIZE
 
-## GOAL: GATHER AND TRACK REPO SIZE
-
 ## TABLE OF CONTENTS
 
 - [RUN THIS SCRIPT]
@@ -9,7 +7,7 @@
 - [WATCH TRENDING MANUALLY]
 - [OPTIONALLY AUTOMATE RUN AS HOOK](#optional:-automate)
 - [Updating to New Releases](#updating-to-new-releases)
-
+- [TEST README](README-grom.md)
 ---
 
 ## Table of Contents
