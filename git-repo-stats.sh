@@ -4,7 +4,7 @@
 bash
 
 # IMPORT CONSTANTS & FUNCTIONS
-source git-repo-stats-funcs.sh
+source repo-stats-deps/git-repo-stats-funcs.sh
 
 # IS GIT LOCALLY INSTALLED?
 which git > /dev/null 2>&1 || { echo -ne '\nERROR: No git executable found.\nGit is a required local executable for this script.\nInstall git locally and try again.\n'; exit; }
@@ -29,22 +29,30 @@ REPO_CREATE_TIME=$(stat .git/ | grep Birth | cut -d' ' -f4)
 
 # WHAT GIT STATE IS REPO IN?
 
+
+# DO ANY SUBDIRS HAVE WHITESPACE IN NAMES?
+
+
 # DOES NON-EMPTY gitignore FILE EXIST?
 if [ -s '.gitignore' ]; then     IGNORES=0; else    IGNORES=1; fi
 
 # Main logic for gathering size data.
 if [ ${IGNORES} -eq 0 ]
 then
-# Create array of paths to du.
+
+# OMITS=-"path ./.git -prune -o"
+# https://stackoverflow.com/questions/4210042/how-to-exclude-a-directory-in-find-command
 find . -mindepth 1 -maxdepth 3 -type d -exec du -s {} +
-# Get size of every dir in repo: dirname bytes.
-# No symbolic links.
-for dir in ${DIRS} ; do $dir  ; done
+
+
+
 else if [ ${IGNORES} -eq 1 ]
 # Filtering out files and dirs/ in gitignore.
-# Get size of every dir in repo: dirname bytes
-for dir in ${DIRS} ; do $dir  ; done
+while read LINE; do
+  echo ${LINE}
+done < .gitignore
 
+STATS=$(find . -mindepth 1 -maxdepth 3 -prune -o -name '.git' -type d -exec du -s {} +)
 fi
 
 # DO WE WANT TO REPORT ON .git/ FOLDER SIZE?
@@ -57,8 +65,10 @@ if [ "${1}" == "include_dot_git" ]
 # Git repo speed tracking hooks:  add, commit, push, pull
 
 :' git-repo-stats-tests.sh
-- Test without gitignore
+- Test without gitignore.
 - Test with gitignore.
+- Test with symlinks, ensure ommitted.
+- Test with folder with name containing space.
 - Report on bytes, kb, mb.
 - Install post-add OR post-commit hook.
 - Set comparative time windows.

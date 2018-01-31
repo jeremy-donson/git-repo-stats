@@ -19,7 +19,7 @@
 1. We have a current version of git locally installed.
 
   - OSX:  First install [homebrew package manager](http://brew.sh) and use it to install git: $ brew install git
-  - Win: Install []() ELSE install [scoop package manager](http://scoop.sh) and use it to install git: $ scoop install git
+  - Win: Install [git4win](https://gitforwindows.org/) or install [scoop package manager](http://scoop.sh) and use it to install git: $ scoop install git
   - Linux: $ apt-get install git
     - NOTE: OLDER Linux Versions May Need To [Tell apt-get Where To Find Latest Git](http://lifeonubuntu.com/ubuntu-missing-add-apt-repository-command/)
 
@@ -39,11 +39,11 @@ $ git config --global user.email "email@example.com"
 
 ⚠️  Warning: CODE BLOAT IS A BAD SIGN!!!!
 
-- [Git Repo Stats Project Support Group](#project-questions-support-group)
+- Bring your prerequisite questions here: [Git Repo Stats Project Support Group](#project-questions-support-group)
 
 ## Sample output
 
-![Sample Output](sample-output.png)
+![Sample Output](repo-stats-deps/sample-output.png)
 
 ## Run script from repo root manually after commit
 
@@ -99,7 +99,7 @@ $ rm -rf .git; git init; git add . ; git commit -m 'First commit or reset repo.'
 
 ## Enhancements
 
-1. Functionalize this tool.
+1. Functionalize this tool and make that functions library a [dependency](https://github.com/jeremy-donson/git-repo-stats/network/dependencies).
 
 2. Finish team dev dojo I, II, III.
 
