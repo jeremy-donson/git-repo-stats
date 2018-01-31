@@ -5,7 +5,7 @@
 - [Run Script From Repo Root Manually After Commit](#run-script-from-repo-root-manually-after-commit)
 - [Rerun Script From Repo Root Manually After Commit](#rerun-script-from-repo-root-manually-after-commit)
 - [Automate Execution As Git Hook](#automate-execution-as-git-hook)
-- [FB Support Group](#facebook-support-group)
+- [Facebook Support Group](#facebook-support-group)
 
 ---
 
@@ -18,6 +18,12 @@ $ bash git-repo-stats.sh
 ## Rerun script from repo root manually after commit
 
 ```
+$ echo 'blahblahblahblahblahblahblahblahblahblahblahblah' > new file
+$ git status
+$ git add .
+$ git status
+$ git commit -m 'Added some stuff.'
+$ git status
 $ bash git-repo-stats.sh
 ```
 
