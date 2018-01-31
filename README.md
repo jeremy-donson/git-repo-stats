@@ -18,7 +18,8 @@
 
   - OSX:  First install [homebrew package manager](http://brew.sh) and use it to install git: $ brew install git
   - Win: Install []() ELSE install [scoop package manager](http://scoop.sh) and use it to install git: $ scoop install git
-  - Linux: $ apt-get install git-core
+  - Linux: $ apt-get install git
+    - NOTE: OLDER Linux Versions May Need To [Tell apt-get Where To Find Latest Git](http://lifeonubuntu.com/ubuntu-missing-add-apt-repository-command/)
 
 2. We have configured git locally.
 
