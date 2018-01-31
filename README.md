@@ -39,7 +39,7 @@ $ git config --global user.email "email@example.com"
 
 ⚠️  Warning: CODE BLOAT IS A BAD SIGN!!!!
 
-- Bring your prerequisite questions here: [Git Repo Stats Project Support Group](#project-questions-support-group)
+- Project prereq questions: [Git Repo Stats Project Support Group](#project-questions-support-group)
 
 ## Sample output
 
@@ -105,9 +105,8 @@ $ rm -rf .git; git init; git add . ; git commit -m 'First commit or reset repo.'
 
 3. Post about projects on LinkedIn and BigDataProcessing.
 
-4. Have a suggestion for this project? Then please [submit project issue](https://github.com/jeremy-donson/git-repo-stats/issues).
-
+4. Have a suggestion for this project? Please [submit a github project issue](https://github.com/jeremy-donson/git-repo-stats/issues).
 
 ## Project Questions Support Group
 
-- [All git-repo-stats Questions](https://www.facebook.com/groups/BigDataProcessing/)
+- Have a question about this project? [Project Questions](https://www.facebook.com/groups/BigDataProcessing/)
