@@ -1,4 +1,6 @@
-# TRACK + REPORT GIT REPO SIZE
+# TRACK + REPORT ON GIT REPO SIZE
+
+⚠️  Warning: CODE BLOAT IS A BAD SIGN
 
 ## Table of Contents
 
@@ -6,6 +8,7 @@
 - [Rerun Script From Repo Root Manually After Commit](#rerun-script-from-repo-root-manually-after-commit)
 - [Automate Execution As Git Hook](#automate-execution-as-git-hook)
 - [Git Repo Stats Project Support Group](#project-questions-support-group)
+
 
 ---
 
