@@ -20,9 +20,17 @@
   - Win: Install []() ELSE install [scoop package manager](http://scoop.sh) and use it to install git: $ scoop install git
   - Linux: $ apt-get install git-core
 
-2. We have been using [git](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control) and [github](http://www.github.com) to manage online project assets, from media to source code.
+2. We have configured git locally.
 
-3. We want to preventable avoid code bloat by tracking your git repo sizes.
+```
+$ git config --global user.name "John Appleseed"
+
+$ git config --global user.email "email@example.com"
+```
+
+3. We have been using [git](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control) and [github](http://www.github.com) to manage online project assets, from media to source code.
+
+4. We want to preventable avoid code bloat by tracking your git repo sizes.
 
 ⚠️  Warning: CODE BLOAT IS A BAD SIGN!!!!
 
