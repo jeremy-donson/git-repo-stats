@@ -13,7 +13,6 @@
 ## Table of Contents
 
 - [Updating to New Releases](#updating-to-new-releases)
-## Updating to New Releases
 
 ---
 
@@ -63,6 +62,6 @@ blah
 ```
 ---
 
-## [Post ALL Questions Here](https://www.facebook.com/groups/BigDataProcessing/)
+## [Facebook Group For Any Questions](https://www.facebook.com/groups/BigDataProcessing/)
 
 
