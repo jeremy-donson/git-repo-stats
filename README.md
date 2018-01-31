@@ -5,6 +5,7 @@
 ## Table of Contents
 
 - [Prerequisites](#prerequisites)
+- [Sample Output](#sample-output)
 - [Run Script From Repo Root Manually After Commit](#run-script-from-repo-root-manually-after-commit)
 - [Rerun Script From Repo Root Manually After Commit](#rerun-script-from-repo-root-manually-after-commit)
 - [Automate Execution As Git Hook](#automate-execution-as-git-hook)
@@ -38,6 +39,10 @@ $ git config --global user.email "email@example.com"
 ⚠️  Warning: CODE BLOAT IS A BAD SIGN!!!!
 
 - [Git Repo Stats Project Support Group](#project-questions-support-group)
+
+## Sample output
+
+![Sample Output](sample-output.png)
 
 ## Run script from repo root manually after commit
 
