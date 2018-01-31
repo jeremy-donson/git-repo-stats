@@ -9,6 +9,7 @@
 - [Run Script From Repo Root Manually After Commit](#run-script-from-repo-root-manually-after-commit)
 - [Rerun Script From Repo Root Manually After Commit](#rerun-script-from-repo-root-manually-after-commit)
 - [Automate Execution As Git Hook](#automate-execution-as-git-hook)
+- [Enhancements](#enhancements)
 - [Git Repo Stats Project Support Group](#project-questions-support-group)
 
 ---
@@ -95,6 +96,13 @@ $ echo '# ** You should see the output of what you ran manually after each commi
 ```
 $ rm -rf .git; git init; git add . ; git commit -m 'First commit or reset repo.'
 ```
+
+## Enhancements
+
+1. Finish team dev dojo I, II, III.
+
+2. Post about projects on LinkedIn and BigDataProcessing.
+
 
 ## Project Questions Support Group
 
