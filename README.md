@@ -1,6 +1,6 @@
-# TRACK + REPORT ON GIT REPO SIZE
+# TRACK + REPORT ON GIT REPO SIZE (automate via hook)
 
-⚠️  Warning: CODE BLOAT IS A BAD SIGN
+⚠️  Warning: CODE BLOAT IS A BAD SIGN!!
 
 ## Table of Contents
 
@@ -72,7 +72,6 @@ $ git add .
 $ git commit -m 'Added automation via post-commit hook.'
 
 $ echo '# ** You should see the output of what you ran manually after each commit going forward. **'
-
 ```
 
 ## Suggestions to reduce repo size.
@@ -83,7 +82,7 @@ $ echo '# ** You should see the output of what you ran manually after each commi
 
 3. Use [git tree](https://git-scm.com/docs/git-ls-tree) or [git submodule](https://www.atlassian.com/blog/git/git-submodules-workflows-tips).
 
-4. ??
+4. ⚠️  Warning: CODE BLOAT IS A BAD SIGN!!
 
 ## Project Questions Support Group
 
