@@ -1,18 +1,18 @@
-# TRACK GIT REPO SIZE TRENDING AS REPORTABLE STATS
+# TRACK + REPORT GIT REPO SIZE
 
-## GOAL: GATHER AND TRACK REPO SIZE TO STAY CODE-BLOAT-AWARE
+## GOAL: GATHER AND TRACK REPO SIZE
 
-## SECTIONS
+## Table of Contents
 
 1. [RUN THIS SCRIPT]
 2. [RERUN MANUALLY]
 3. [WATCH TRENDING MANUALLY]
 
-4. [OPTIONALLY AUTOMATE RUN AS HOOK](#OPTIONAL:-Automate-gather-stats-and-report-on-trending-after-each-commit.)
+4. [OPTIONALLY AUTOMATE RUN AS HOOK](#optional:-automate-gather-stats-and-report-on-trending-after-each-commit.)
 
-5. [GLITCH SUPPORT](#[Post-ALL-Questions-Here](https://www.facebook.com/groups/BigDataProcessing/))
+5. [GLITCH SUPPORT](#[post-all-questions-here](https://www.facebook.com/groups/bigdataprocessing/))
 
-## Updating to New Releases
+---
 
 ## Run this script manually from repo root to test execution and gather first repo stats.
 
