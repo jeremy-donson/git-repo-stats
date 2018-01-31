@@ -10,14 +10,23 @@
 - [Automate Execution As Git Hook](#automate-execution-as-git-hook)
 - [Git Repo Stats Project Support Group](#project-questions-support-group)
 
-
 ---
 
 ## Prerequisites:
 
 1. We have a current version of git locally installed.
-2. We have been using git to manage online project assets, from media to source code.
-3. We want to avoid code bloat by tracking your git repo sizes.
+
+  - OSX:  First install [homebrew package manager](http://brew.sh) and use it to install git: $ brew install git
+  - Win: Install []() ELSE install [scoop package manager](http://scoop.sh) and use it to install git: $ scoop install git
+  - Linux: $ apt-get install git-core
+
+2. We have been using [git](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control) and [github](http://www.github.com) to manage online project assets, from media to source code.
+
+3. We want to preventable avoid code bloat by tracking your git repo sizes.
+
+⚠️  Warning: CODE BLOAT IS A BAD SIGN!!!!
+
+- [Git Repo Stats Project Support Group](#project-questions-support-group)
 
 ## Run script from repo root manually after commit
 
