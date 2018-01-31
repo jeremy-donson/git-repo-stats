@@ -7,7 +7,7 @@
 - [WATCH TRENDING MANUALLY]
 - [OPTIONALLY AUTOMATE RUN AS HOOK](#optional:-automate)
 - [Updating to New Releases](#updating-to-new-releases)
-- [TEST README](README-grom.md)
+- [BBKT README ANCHORS](https://bitbucket.org/site/master/issues/11353/automatically-create-anchor-link-for)
 ---
 
 ## Table of Contents
