@@ -4,11 +4,11 @@
 
 ## Table of Contents
 
-1. [RUN THIS SCRIPT]
-2. [RERUN MANUALLY]
-3. [WATCH TRENDING MANUALLY]
+- [RUN THIS SCRIPT]
+- [RERUN MANUALLY]
+- [WATCH TRENDING MANUALLY]
 
-4. [OPTIONALLY AUTOMATE RUN AS HOOK](#optional:-automate)
+- [OPTIONALLY AUTOMATE RUN AS HOOK](#optional:-automate)
 
 - [Updating to New Releases](#updating-to-new-releases)
 ---

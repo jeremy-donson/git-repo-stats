@@ -5,16 +5,6 @@
 # Rerun manually after commits OR
 # Add git post-commit hook to rerun and gather more stats after every commit.
 
-:'
-echo '
-
-' > git-repo-stats-post-commit-hook.sh
-
-cd .git/hooks
-
-ln -s ../git-repo-stats-post-commit-hook.sh .
-'
-
 # CONSTANTS
 TRUE=0
 FALSE=1
