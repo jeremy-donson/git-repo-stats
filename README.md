@@ -46,6 +46,6 @@ $ echo '# ** You should see the output of what you ran manually after each commi
 
 ```
 
-## Facebook Support Group
+## git-repo-stats Project Questions Support Group
 
-- [Facebook Group For Any Questions](https://www.facebook.com/groups/BigDataProcessing/)
+- [All git-repo-stats Questions](https://www.facebook.com/groups/BigDataProcessing/)
