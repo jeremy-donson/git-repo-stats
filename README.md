@@ -105,6 +105,8 @@ $ rm -rf .git; git init; git add . ; git commit -m 'First commit or reset repo.'
 
 3. Post about projects on LinkedIn and BigDataProcessing.
 
+4. Have a suggestion for this project? Then please [submit project issue](https://github.com/jeremy-donson/git-repo-stats/issues).
+
 
 ## Project Questions Support Group
 

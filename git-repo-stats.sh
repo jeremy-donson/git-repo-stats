@@ -3,11 +3,8 @@
 # Avoid quitting window on exit error.
 bash
 
-# CONSTANTS
-TRUE=0
-FALSE=1
-
-# FUNCTIONS
+# IMPORT CONSTANTS & FUNCTIONS
+source git-repo-stats-funcs.sh
 
 # IS GIT LOCALLY INSTALLED?
 which git > /dev/null 2>&1 || { echo -ne '\nERROR: No git executable found.\nGit is a required local executable for this script.\nInstall git locally and try again.\n'; exit; }
@@ -31,8 +28,6 @@ CURRENT_DIR=$(echo ${CURRENT_PATH} | rev | cut -d'/' -f1 | rev)
 REPO_CREATE_TIME=$(stat .git/ | grep Birth | cut -d' ' -f4)
 
 # WHAT GIT STATE IS REPO IN?
-GIT_STATE=$(git status)
-
 
 # DOES NON-EMPTY gitignore FILE EXIST?
 if [ -s '.gitignore' ]; then     IGNORES=0; else    IGNORES=1; fi
@@ -41,7 +36,7 @@ if [ -s '.gitignore' ]; then     IGNORES=0; else    IGNORES=1; fi
 if [ ${IGNORES} -eq 0 ]
 then
 # Create array of paths to du.
-# find . -mindepth 2 -maxdepth 2 -type d -name 14 -exec du -s {} +
+find . -mindepth 1 -maxdepth 3 -type d -exec du -s {} +
 # Get size of every dir in repo: dirname bytes.
 # No symbolic links.
 for dir in ${DIRS} ; do $dir  ; done
