@@ -1,41 +1,26 @@
 # TRACK + REPORT GIT REPO SIZE
 
-## TABLE OF CONTENTS
-
-- [RUN THIS SCRIPT]
-- [RERUN MANUALLY]
-- [WATCH TRENDING MANUALLY]
-- [OPTIONALLY AUTOMATE RUN AS HOOK](#optional:-automate)
-- [Updating to New Releases](#updating-to-new-releases)
-- [BBKT README ANCHORS](https://bitbucket.org/site/master/issues/11353/automatically-create-anchor-link-for)
----
-
 ## Table of Contents
 
+- [Run Script From Repo Root Manually After Commit](#run-script-from-repo-root-manually-after-commit)
+- [Rerun Script From Repo Root Manually After Commit](#rerun-script-from-repo-root-manually-after-commit)
+- [Automate Execution As Git Hook](#automate-execution-as-git-hook)
 - [Updating to New Releases](#updating-to-new-releases)
-
 ---
 
-## Run this script manually from repo root to test execution and gather first repo stats.
+## Run script from repo root manually after commit
 
 ```
 $ bash git-repo-stats.sh
 ```
 
-## Rerun manually after commits.
+## Rerun script from repo root manually after commit
 
 ```
 $ bash git-repo-stats.sh
 ```
 
-## Report manually on repo size trending.
-
-```
-$ bash git-repo-stats.sh stats
-```
-
-
-## OPTIONAL: Automate gather stats and report on trending after each commit.
+## Automate Execution As Git Hook
 
 ```
 $ echo '
