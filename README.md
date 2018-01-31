@@ -99,9 +99,11 @@ $ rm -rf .git; git init; git add . ; git commit -m 'First commit or reset repo.'
 
 ## Enhancements
 
-1. Finish team dev dojo I, II, III.
+1. Functionalize this tool.
 
-2. Post about projects on LinkedIn and BigDataProcessing.
+2. Finish team dev dojo I, II, III.
+
+3. Post about projects on LinkedIn and BigDataProcessing.
 
 
 ## Project Questions Support Group

@@ -61,7 +61,6 @@ if [ "${1}" == "include_dot_git" ]
 
 # Git repo speed tracking hooks:  add, commit, push, pull
 
-
 :' git-repo-stats-tests.sh
 - Test without gitignore
 - Test with gitignore.
@@ -88,5 +87,4 @@ if [ "${1}" == "include_dot_git" ]
 - commit-tstamp
 - 
 - 
-
 '
