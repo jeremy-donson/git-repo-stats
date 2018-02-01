@@ -66,19 +66,12 @@ $ bash git-repo-stats.sh
 ## Automate Execution As Git Hook
 
 ```
-$ echo '
-HOOK SCRIPT
-' > git-repo-stats-post-commit-hook.sh
-
-$ cd .git/hooks
-
-$ ln -s ../../git-repo-stats-post-commit-hook.sh  pre-commit
+$ cd .git/hooks; ln -s ../../git-repo-stats-post-commit-hook.sh  pre-commit ; cd ../..
 
 $ git add .
 
-$ git commit -m 'Added automation via post-commit hook.'
+$ git commit -m 'Added automation via soft link pre-commit hook.'
 
-$ echo '# ** You should see the output of what you ran manually after each commit going forward. **'
 ```
 
 ## Suggestions to reduce repo size.

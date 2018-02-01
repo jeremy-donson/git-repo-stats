@@ -65,6 +65,8 @@ fi
 
 echo "${COMMITTER_NAME}:${COMMITTER_EMAIL}:${TSTAMP}:${STATSUM}" >> repo-stats-deps/stats-data.dat
 
+echo -en 'You have gathered git repo asset size stats in repo-stats-deps/stats-data.dat.'
+
 :'else if [ ${IGNORES} -eq 1 ]
 # Filtering out files and dirs/ in gitignore.
 while read LINE; do
