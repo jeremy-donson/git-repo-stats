@@ -66,7 +66,7 @@ $ bash git-repo-stats.sh
 ## Automate Execution As Git Hook
 
 ```
-$ cd .git/hooks; ln -s ../../git-repo-stats-post-commit-hook.sh  pre-commit ; cd ../..
+$ echo 'bash ../../git-repo-stats-post-commit-hook.sh' > .git/hooks/pre-commit
 
 $ git add .
 
