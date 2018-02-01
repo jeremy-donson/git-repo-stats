@@ -1,3 +1,4 @@
+
 :' 
 # WHAT GIT STATE IS REPO IN?
 GIT_STATE=$(git status)
