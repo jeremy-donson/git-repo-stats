@@ -1,0 +1,24 @@
+repo-stats-deps/git-repo-stats-funcs.sh: line 18: : 
+# WHAT GIT STATE IS REPO IN?
+GIT_STATE=$(git status)
+
+# CONSTANTS
+TRUE=0
+FALSE=1
+
+
+#GIT VERSION ABOVE MIN?
+GIT_VERSION_MIN=2.1
+GIT_V_MIN_10=$(echo "scale=4; ${GIT_VERSION_MIN}*10" | bc | cut -d. -f1)
+GIT_VERSION=$( git version | cut -d: command not found
+You have gathered git repo asset size stats in repo-stats-deps/stats-data.dat.git-repo-stats.sh: line 79: :else if [ ${IGNORES} -eq 1 ]
+# Filtering out files and dirs/ in gitignore.
+while read LINE; do
+  echo ${LINE}
+done < .gitignore
+
+STATS=$(find . -mindepth 1 -maxdepth 3 -prune -o -name .git -type d -exec du -s {} +)
+# OMITS=-"path ./.git -prune -o"
+# https://stackoverflow.com/questions/4210042/how-to-exclude-a-directory-in-find-command
+: No such file or directory
+git-repo-stats.sh: line 118: syntax error: unexpected end of file
