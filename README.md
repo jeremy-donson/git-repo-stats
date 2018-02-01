@@ -72,7 +72,7 @@ HOOK SCRIPT
 
 $ cd .git/hooks
 
-$ ln -s ../git-repo-stats-post-commit-hook.sh .
+$ ln -s ../../git-repo-stats-post-commit-hook.sh  pre-commit
 
 $ git add .
 
