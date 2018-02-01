@@ -7,7 +7,7 @@ TSTAMP=$(date +'%Y%m%d%H%M%S')
 bash
 
 # IMPORT CONSTANTS & FUNCTIONS
-source repo-stats-deps/git-repo-stats-funcs.sh
+source git-repo-stats-deps/git-repo-stats-funcs.sh
 
 # IS GIT LOCALLY INSTALLED?
 which git > /dev/null 2>&1 || { echo -ne '\nERROR: No git executable found.\nGit is a required local executable for this script.\nInstall git locally and try again.\n'; exit; }
@@ -22,7 +22,6 @@ if [ ${GIT_V_MIN_10} -lt ${GIT_V_10} ]; then echo -ne "\nInstalled version of gi
 
 # IS GIT CONFIGURED? ??
 CONFIG=$(git config --list | grep user)
-
 
 # ARE WE AT GIT REPO ROOT? CONFIRM ELSE EXIT WITH ERROR MESSAGE.
 if [ -d .git/ ]; then REPO_ROOT=0; else echo -ne '\n\nWe are not at a git repo root, which is required for this script to work.\nRerun script from repo root.\nCurrent working dir:\n'; pwd; echo -ne '\n\n'; exit; fi
@@ -41,7 +40,10 @@ REPO_CREATE_TIME=$(stat .git/ | grep Birth | cut -d' ' -f4)
 
 
 # DOES NON-EMPTY gitignore FILE EXIST?
-if [ -s '.gitignore' ]; then     IGNORES=0; else    IGNORES=1; fi
+if [ -s '.gitignore' ]; then IGNORES=0; else IGNORES=1; fi
+
+# Add the git-repo-stats-deps dir to .gitignore
+echo 'repo-stats-deps/' >> .gitignore
 
 # WHO JUST COMMITED?
 COMMITTER_NAME=$(git config user.name)
@@ -63,7 +65,7 @@ do
 done
 fi
 
-echo "${COMMITTER_NAME}:${COMMITTER_EMAIL}:${TSTAMP}:${STATSUM}" >> repo-stats-deps/stats-data.dat
+echo "${COMMITTER_NAME}:${COMMITTER_EMAIL}:${TSTAMP}:${STATSUM}" >> git-repo-stats-deps/stats-data.dat
 
 echo -en 'You have gathered git repo asset size stats in repo-stats-deps/stats-data.dat.'
 
