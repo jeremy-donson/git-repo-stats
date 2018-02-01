@@ -1,3 +1,11 @@
+1. only add if new total size
+
+2. run script manually
+
+3. fix errors
+
+4. functionalize
+
 repo-stats-deps/git-repo-stats-funcs.sh: line 18: : 
 # WHAT GIT STATE IS REPO IN?
 GIT_STATE=$(git status)
